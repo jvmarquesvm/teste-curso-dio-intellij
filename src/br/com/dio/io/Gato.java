@@ -27,7 +27,6 @@ public class Gato implements Serializable {
         return ronrona;
     }
 
-
     public Boolean getCastrado() {
         return castrado;
     }
@@ -42,5 +41,16 @@ public class Gato implements Serializable {
 
     public String getCor() {
         return cor;
+    }
+
+    @Override
+    public String toString() {
+        return "Gato{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", cor='" + cor + '\'' +
+                ", castrado=" + castrado +
+                ", ronrona=" + ronrona +
+                '}';
     }
 }

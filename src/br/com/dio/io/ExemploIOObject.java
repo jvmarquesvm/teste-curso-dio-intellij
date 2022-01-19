@@ -23,9 +23,10 @@ public class ExemploIOObject {
         Gato objGato = (Gato) ois.readObject();
 
         System.out.printf("\nNome........: %s\n", objGato.getNome());
-        System.out.printf("\nIdade........: %s\n", objGato.getIdade());
-        System.out.printf("\nCor........: %s\n", objGato.getCor());
-        System.out.printf("\nCastrado........: %s\n", objGato.getCastrado());
+        System.out.printf("Idade........: %s\n", objGato.getIdade());
+        System.out.printf("Cor........: %s\n", objGato.getCor());
+        System.out.printf("Castrado........: %s\n", objGato.getCastrado());
+        System.out.printf("Ronrona........: %s\n", objGato.getRonrona());
 
         System.out.println(objGato);
 
