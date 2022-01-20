@@ -3,7 +3,14 @@ package br.com.dio.testes;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Sendo a circunferência de 360 graus, equivalente a um dia de 24 horas,
+ * cada 1/4 da circunferência terá 6 horas, ou 360 minutos.
+ * A circunferência terá ao total 1440 minutos.
+ * Cada unidade de grau da circunferência terá 4 minutos.
+ */
 public class MudancaContinua2 {
+
     public static void main(String[] args) throws IOException {
         Scanner leitor = new Scanner(System.in);
         while (leitor.hasNext()) {
@@ -34,4 +41,5 @@ public class MudancaContinua2 {
             }
         }
     }
+
 }
