@@ -23,6 +23,7 @@ public class MaiorMedia {
             valor[i] = scan.nextInt();
         }
 
+
         for (int i : valor) {
             if ( i > valorAnterior ) {
                 maiorNumero = i;
