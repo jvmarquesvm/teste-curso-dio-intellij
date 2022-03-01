@@ -25,7 +25,9 @@ public class No {
     }
 
     public void setRefNo(No refNo) {
-        this.refNo = refNo;
+        if (refNo != null) {
+            this.refNo = refNo;
+        }
     }
 
     @Override
