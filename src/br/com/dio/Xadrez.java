@@ -13,6 +13,12 @@ import java.util.Scanner;
  *
  * Dados um linha e coluna, dizer se a casa é branca ou preta
  *
+ * Linha Coluna Resultado
+ * Impar Impar  Branca
+ * Par   Impar  Preta
+ * Impar Par    Preta
+ * Par   Par    Branca
+ *
  */
 
 public class Xadrez {
