@@ -1,19 +1,20 @@
 package br.com.dio.fila;
 
-public class Fila {
+public class Fila<T> {
 
-    private No refNoEntrada = null;
+    private No<T> refNoEntrada = null;
 
     public boolean isEmpty(){
         return refNoEntrada == null ? true : false;
     }
 
-    public void enqueue(No novoNo){
+    public void enqueue(T objeto){
+        No novoNo = new No(objeto);
         novoNo.setRefNo(refNoEntrada);
         refNoEntrada = novoNo;
     }
 
-    public No first(){
+    public T first(){
         if(!this.isEmpty()){
             No primeiroNo = refNoEntrada;
             while (true){
@@ -23,12 +24,12 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObjeto();
         }
         return null;
     }
 
-    public No dequeue(){
+    public T dequeue(){
         if(!this.isEmpty()){
             No primeiroNo = refNoEntrada;
             No noAux = refNoEntrada;
@@ -41,7 +42,7 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObjeto();
         }
         return null;
     }
