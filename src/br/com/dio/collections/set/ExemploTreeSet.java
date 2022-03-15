@@ -1,6 +1,5 @@
 package br.com.dio.collections.set;
 
-import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
 

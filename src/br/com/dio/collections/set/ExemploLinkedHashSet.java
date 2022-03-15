@@ -1,10 +1,7 @@
 package br.com.dio.collections.set;
 
-import com.sun.source.tree.Tree;
-
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 public class ExemploLinkedHashSet {
 
